@@ -1,125 +1,269 @@
-# Ecommerce Database SQL Analysis
+Ecommerce Database SQL Analysis
 
-## 📌 Project Overview
+Project Overview
 
-This project analyzes ecommerce sales data using SQL Server to generate business insights related to customers, products, sales, profit, regions, categories, and monthly performance.
+Ecommerce Database SQL Analysis is a practical SQL Server project focused on analyzing ecommerce sales data and converting raw transactional data into meaningful business insights.
 
-The project demonstrates practical SQL skills including aggregation, CTEs, window functions, ranking, CASE statements, and business-oriented analysis.
+The project covers customer performance, product performance, sales trends, profit analysis, category performance, regional analysis, and order-level analysis.
 
-## 🎯 Objectives
+This project is designed to demonstrate practical SQL skills that are useful for Data Analyst and SQL Developer roles.
 
-- Analyze total sales and total profit.
-- Identify top customers and products.
-- Analyze regional and category performance.
-- Identify loss-making products.
-- Calculate profit margins.
-- Analyze monthly sales and profit trends.
-- Find top products within each category.
-- Compare current sales with previous-month sales.
-- Calculate Average Order Value.
-- Identify repeat customers.
-- Calculate total quantity sold.
+Project Objective
 
-## 🛠️ Tools & Technologies
+The main objective of this project is to analyze ecommerce data using SQL Server and identify important patterns and trends in sales and profitability.
 
-- SQL Server
-- SQL Server Management Studio (SSMS)
-- T-SQL
-- CSV Dataset
+The analysis helps understand which customers generate the highest revenue, which products perform well, which categories are profitable, which regions contribute more sales, and how sales change over time.
 
-## 📊 SQL Concepts Used
+Tools and Technologies
 
-- SELECT
-- GROUP BY
-- ORDER BY
-- HAVING
-- Aggregate Functions
-- CASE Statements
-- CTE (Common Table Expression)
-- DENSE_RANK()
-- LAG()
-- PARTITION BY
-- DISTINCT
-- COUNT()
-- SUM()
-- ROUND()
-- NULLIF()
+SQL Server
 
-## 🔍 Key Analysis
+SQL Server Management Studio
 
-### 1. Top 5 Customers
-Identifies customers with the highest total sales.
+T-SQL
 
-### 2. Sales & Profit Analysis
-Calculates total sales and total profit.
+CSV Dataset
 
-### 3. Regional Sales
-Compares sales performance across regions.
+SQL Concepts Used
 
-### 4. Monthly Sales & Profit
-Analyzes sales and profit by year and month.
+SELECT statements
 
-### 5. Loss-Making Products
-Identifies products with negative total profit.
+WHERE conditions
 
-### 6. Top 10 Products
-Finds the top 10 products based on total sales.
+GROUP BY
 
-### 7. Top 3 Products by Category
-Uses `CTE`, `DENSE_RANK()` and `PARTITION BY` to rank products within each category.
+HAVING
 
-### 8. Profit Margin
-Calculates category-level profit margin percentage.
+ORDER BY
 
-### 9. Sales Performance
-Uses `CASE` statements to classify categories as High, Medium, or Low Sales.
+DISTINCT
 
-### 10. Product Profitability
-Classifies products as Profitable, Loss, or No Profit No Loss.
+Aggregate Functions
 
-### 11. Region & Category Analysis
-Analyzes sales and profit by region and category.
+SUM
 
-### 12. Previous Month Sales
-Uses `LAG()` to compare monthly sales with the previous month.
+COUNT
 
-### 13. Average Order Value
-Calculates Average Order Value using total sales and distinct orders.
+AVG
 
-### 14. Repeat Customers
-Identifies customers who placed more than one order.
+ROUND
 
-### 15. Total Quantity
-Calculates the total quantity of products sold.
+NULLIF
 
-## 📂 Project Structure
+CASE Statements
 
-```text
+Subqueries
+
+Common Table Expressions
+
+DENSE_RANK
+
+Window Functions
+
+PARTITION BY
+
+LAG
+
+Joins
+
+Data Filtering
+
+Data Aggregation
+
+Business Analysis
+
+Data Analysis Performed
+
+Sales Analysis
+
+The project calculates total sales and analyzes sales performance across different customers, products, categories, regions, and time periods.
+
+Profit Analysis
+
+Total profit is calculated to understand the overall profitability of the business.
+
+The analysis also identifies profitable and loss-making products and categories.
+
+Customer Analysis
+
+Customers are analyzed based on their total sales and order activity.
+
+The project identifies top customers and repeat customers to understand customer contribution and purchasing behavior.
+
+Product Analysis
+
+Products are ranked based on sales and profitability.
+
+The analysis identifies the best-performing products and products that generate losses.
+
+Category Analysis
+
+Product categories are compared based on sales, profit, quantity, and profit margin.
+
+This helps identify the strongest and weakest categories.
+
+Regional Analysis
+
+Sales and profit are analyzed across different regions.
+
+The analysis helps identify regions with strong sales performance and regions that require improvement.
+
+Monthly Analysis
+
+Sales and profit are analyzed month by month to understand business trends.
+
+The project also uses the LAG function to compare current-month sales with previous-month sales.
+
+Ranking Analysis
+
+DENSE_RANK and PARTITION BY are used to identify the top-performing products within each category.
+
+This provides a more detailed comparison of products across categories.
+
+Profit Margin Analysis
+
+Profit margin is calculated to understand how efficiently sales are converted into profit.
+
+The analysis helps identify categories and products with better profitability.
+
+Average Order Value
+
+Average Order Value is calculated using sales and distinct orders.
+
+This metric helps understand the average revenue generated per order.
+
+Key SQL Techniques
+
+The project demonstrates the use of aggregation functions to summarize large amounts of ecommerce data.
+
+GROUP BY is used to analyze sales and profit by customers, products, categories, and regions.
+
+HAVING is used to filter grouped results based on business conditions.
+
+CASE statements are used to classify sales and profitability into meaningful categories.
+
+CTEs are used to organize complex SQL queries and improve query readability.
+
+DENSE_RANK is used to rank products based on their sales performance.
+
+PARTITION BY is used to create rankings within individual categories.
+
+LAG is used to compare current sales with previous-period sales.
+
+Subqueries are used to perform calculations and filtering based on intermediate results.
+
+Project Structure
+
 Ecommerce-Database-SQL-Analysis/
 │
 ├── SQL project.sql
-├── Ecommerce Sales Data.csv
+│
+├── Superstore Cleaned(3).csv
+│
 └── README.md
-```
 
-> **Note:** Add your original `Ecommerce Sales Data.csv` file to this folder before uploading the project to GitHub. The uploaded file provided here contains the SQL script, so the CSV dataset was not available to include automatically.
+File Description
 
-## 🚀 How to Run
+File
 
-1. Open SQL Server Management Studio (SSMS).
-2. Create or select your database.
-3. Import the ecommerce/superstore CSV dataset.
-4. Make sure the table name matches `[dbo].[Superstore Cleaned]`.
-5. Open `SQL project.sql`.
-6. Execute the queries.
-7. Review the results and business insights.
+Description
 
-## 💡 Skills Demonstrated
+SQL project.sql
 
-**SQL | SQL Server | Data Analysis | Business Analysis | CTE | Window Functions | DENSE_RANK | LAG | CASE Statements | Aggregations**
+Contains SQL queries used for data cleaning, analysis, aggregation, ranking, and business insights
 
-## 👨‍💻 Author
+Superstore Cleaned(3).csv
 
-**Maheswaram Viswanth Naga Venkata Krishna**
+Ecommerce sales dataset used for the project
 
-Aspiring Data Analyst / SQL Developer
+README.md
+
+Contains project documentation and information
+
+How to Run the Project
+
+Open SQL Server Management Studio.
+
+Create a new database for the project.
+
+Import the Superstore Cleaned(3).csv dataset into SQL Server.
+
+Create the required table using the dataset columns.
+
+Open the SQL project.sql file.
+
+Check the table name and column names before execution.
+
+Execute the SQL queries in SQL Server Management Studio.
+
+Review the output of each query and analyze the generated business insights.
+
+Expected Outcomes
+
+The project provides insights into overall sales and profitability.
+
+It identifies the highest-value customers.
+
+It identifies the best-performing products.
+
+It identifies loss-making products.
+
+It compares sales and profit across regions.
+
+It compares performance across product categories.
+
+It identifies monthly sales and profit trends.
+
+It identifies repeat customers.
+
+It calculates average order value.
+
+It provides product rankings within categories.
+
+It compares current-period performance with previous-period performance.
+
+Skills Demonstrated
+
+SQL Server
+
+T-SQL
+
+Data Analysis
+
+Data Aggregation
+
+Business Analysis
+
+Window Functions
+
+Common Table Expressions
+
+Ranking Functions
+
+Customer Analysis
+
+Product Analysis
+
+Sales Analysis
+
+Profitability Analysis
+
+Career Relevance
+
+This project demonstrates practical SQL and data analysis skills required for entry-level Data Analyst and SQL Developer positions.
+
+The project shows the ability to work with a real-world sales dataset, write analytical SQL queries, perform business calculations, identify trends, and generate useful insights from data.
+
+Conclusion
+
+Ecommerce Database SQL Analysis provides a practical understanding of how SQL can be used to analyze business data.
+
+The project combines basic and advanced SQL concepts to perform customer, product, sales, profit, category, regional, and time-based analysis.
+
+This project can be used as a portfolio project to demonstrate SQL and data analysis skills on GitHub.
+
+Author
+
+Maheswaram Viswanth Naga Venkata Krishna
+
+Data Analyst / SQL Developer Aspirant
